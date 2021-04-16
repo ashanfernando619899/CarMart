@@ -11,43 +11,63 @@ if (! empty($_POST["signup-btn"])) {
 <html>
 <head>
 
-  <link rel = "stylesheet" href="styles.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-</div>
+  <title>CarMart</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 
 </head>
 
-
 <body>
 
-  <center>
-
-  <nav class="navbar navbar-defailt navbar-fixed-top">
-  <div class="container">
-
-    <ul class="nav navbar-nav">
-
-  <!-- Dropdown menue-->
-
-  <div class="navbar">
-    <a href="adminhome.php">Home</a>
-    <a href="#news">News</a>
-
-  <div class="navbar">
-    <a href="#news">Add Vehicles</a>
-      <a href="login.php">Sell Vehicle</a>
-      <a href="login.php">Contact us</a>
-    <a href="adminregistration.php">Add Admin</a>
-      <a href="logout.php">Log out</a>
-  </div>
 
 
+  <!-- Header -->
+  <header class="">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><h2>Car<em>Mart</em></h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.php">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="cars.html">Add vehicle</a></li>
+                <li class="nav-item"><a class="nav-link" href="cars.html">View vehicle</a></li>
 
 
-  </div>
-  </div>
-  </center>
 
+
+                <li class="nav-item"><a class="nav-link" href="adminregistration.php">Add new admin</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<br>
+<br>
   <br>
   <br>
 
@@ -102,8 +122,10 @@ if (! empty($_POST["signup-btn"])) {
 					<div class="row">
 						<div class="inline-block">
 							<div class="form-label">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								Username<span class="required error" id="username-info"></span>
 							</div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input class="input-box-330" type="text" name="username"
 								id="username">
 						</div>
@@ -112,8 +134,10 @@ if (! empty($_POST["signup-btn"])) {
 					<div class="row">
 						<div class="inline-block">
 							<div class="form-label">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								Email<span class="required error" id="email-info"></span>
 							</div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input class="input-box-330" type="email" name="email" id="email">
 						</div>
 					</div>
@@ -121,8 +145,10 @@ if (! empty($_POST["signup-btn"])) {
 					<div class="row">
 						<div class="inline-block">
 							<div class="form-label">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								Password<span class="required error" id="signup-password-info"></span>
 							</div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input class="input-box-330" type="password"
 								name="signup-password" id="signup-password">
 						</div>
@@ -132,9 +158,11 @@ if (! empty($_POST["signup-btn"])) {
 					<div class="row">
 						<div class="inline-block">
 							<div class="form-label">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								Confirm Password<span class="required error"
 									id="confirm-password-info"></span>
 							</div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input class="input-box-330" type="password"
 								name="confirm-password" id="confirm-password">
 						</div>
@@ -142,6 +170,7 @@ if (! empty($_POST["signup-btn"])) {
 
 
 					<div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input class="btn" type="submit" name="signup-btn"
 							id="signup-btn" value="Sign up">
 					</div>
@@ -151,64 +180,7 @@ if (! empty($_POST["signup-btn"])) {
 	</div>
 
 
-  <!-- Footer html code-->
 
-
-  		<footer class="footer-distributed">
-
-  		<div class="footer-left">
-
-  		<h3>Look<span>Good</span></h3>
-
-  		<p class="footer-links">
-  		<a href="#">Home</a>
-  	·
-  		<a href="#">About</a>
-  	·
-  		<a href="#">Contact</a>
-  		</p>
-
-
-  		</div>
-
-  		<div class="footer-center">
-
-  		<div>
-  		<i class="fa fa-map-marker"></i>
-  		<p><span>no 3 st Annes road Jaela</span> Gampaha, Srilanka</p>
-  		</div>
-
-  		<div>
-  		<i class="fa fa-phone"></i>
-  		<p>+011 2236439</p>
-  		</div>
-
-  		<div>
-  		<i class="fa fa-envelope"></i>
-  		<p><a href="mailto:support@company.com">lookgood@gmail.com</a></p>
-  		</div>
-
-  		</div>
-
-  		<div class="footer-right">
-
-  		<p class="footer-company-about">
-  		<span>About the company</span>
-      Lookgood is an online clothing site where you can find any type of clothing.
-  		</p>
-
-  		<div class="footer-icons">
-
-  		<a href="#"><i class="fa fa-facebook"></i></a>
-  		<a href="#"><i class="fa fa-twitter"></i></a>
-  		<a href="#"><i class="fa fa-linkedin"></i></a>
-  		<a href="#"><i class="fa fa-github"></i></a>
-
-  		</div>
-
-  		</div>
-
-  		</footer>
 
 	<script>
 function signupValidation() {

@@ -9,65 +9,82 @@ if (! empty($_POST["login-btn"])) {
 ?>
 
 <html>
+<head>
 
-<head class="header">
-
-
-
-    <div class="bg">
-  <title> CarMart </title>
-  <link rel = "stylesheet" href="styles.css"/>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel = "stylesheet" href="styles.css"/>
-  <meta name="viewport" content="width=device=width, initial-scale=1,user-scaleable=no">
-
- <div class="header2">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/images/favicon.ico">
 
 
+  <title>CarMart</title>
 
-   <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-               <img class="logo1" src="images/logo1.png" alt="">
-                <br>
-                <br>
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 
-</div>
 </head>
+
+<body>
+
+
+<header class="">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><h2>Car<em>Mart</em></h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                  <a class="nav-link" href="index.php">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="cars.html">Buy vehicle</a></li>
+              <li class="nav-item"><a class="nav-link" href="cars.html">Sell vehicle</a></li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                  <a class="dropdown-item" href="team.html">Team</a>
+                  <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                  <a class="dropdown-item" href="terms.html">Terms</a>
+                </div>
+            </li>
+
+
+
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.php">log in</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
 
 <body>
 
 <center>
 
-<nav class="navbar navbar-defailt navbar-fixed-top">
-<div class="container">
-
-  <ul class="nav navbar-nav">
-
-<!-- Dropdown menue-->
-
-<div class="navbar">
-  <a href="index.php">Home</a>
-  <a href="#news">News</a>
-
-<div class="navbar">
-  <a href="#news">Buy Vehicle</a>
-    <a href="login.php">Sell Vehicle</a>
-      <a href="login.php">Contact us</a>
-  <a href="#news">About us</a>
-    <a href="login.php">Log in</a>
-</div>
 
 
-
-
-
-</div>
-</div>
 </center>
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -102,8 +119,10 @@ if (! empty($_POST["login-btn"])) {
 				<div class="row">
 						<div class="inline-block">
 							<div class="form-label">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								Username<span class="required error" id="username-info"></span>
 							</div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input class="input-box-330" type="text" name="username"
 								id="username">
 						</div>
@@ -111,13 +130,16 @@ if (! empty($_POST["login-btn"])) {
 					<div class="row">
 						<div class="inline-block">
 							<div class="form-label">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								Password<span class="required error" id="login-password-info"></span>
 							</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input class="input-box-330" type="password"
 								name="login-password" id="login-password">
 						</div>
 					</div>
 					<div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input class="btn" type="submit" name="login-btn"
 							id="login-btn" value="Login">
 					</div>
@@ -128,71 +150,7 @@ if (! empty($_POST["login-btn"])) {
 		</div>
 	</div>
 
-  <!-- Footer html code-->
-
-
-  		<footer class="footer-distributed">
-
-  		<div class="footer-left">
-
-  		<h3>Car<span>Mart</span></h3>
-
-  		<p class="footer-links">
-  		<a href="#">Home</a>
-  	·
-  		<a href="#">About</a>
-  	·
-  		<a href="#">Contact</a>
-  		</p>
-
-
-  		</div>
-
-  		<div class="footer-center">
-
-  		<div>
-  		<i class="fa fa-map-marker"></i>
-  		<p><span>no 3 st Annes road Jaela</span> Gampaha, Srilanka</p>
-  		</div>
-
-  		<div>
-  		<i class="fa fa-phone"></i>
-  		<p>+011 2236439</p>
-  		</div>
-
-  		<div>
-  		<i class="fa fa-envelope"></i>
-  		<p><a href="mailto:support@company.com">CarMart@gmail.com</a></p>
-  		</div>
-
-  		</div>
-
-  		<div class="footer-right">
-
-  		<p class="footer-company-about">
-  		<span>About the company</span>
-    CarMart is an online store where you can buy or sell any type of vehicle.
-  		</p>
-
-  		<div class="footer-icons">
-
-  		<a href="#"><i class="fa fa-facebook"></i></a>
-  		<a href="#"><i class="fa fa-twitter"></i></a>
-  		<a href="#"><i class="fa fa-linkedin"></i></a>
-  		<a href="#"><i class="fa fa-github"></i></a>
-
-  		</div>
-
-  		</div>
-
-  		</footer>
-
-
-
-
-
-
-	<script>
+  <script>
 function loginValidation() {
 	var valid = true;
 	$("#username").removeClass("error-field");
@@ -220,6 +178,6 @@ function loginValidation() {
 	return valid;
 }
 </script>
-</div>
+
 </BODY>
 </HTML>

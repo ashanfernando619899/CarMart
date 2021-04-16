@@ -15,257 +15,253 @@ if (isset($_SESSION["username"])) {
 
 ?>
 
-<center>
-  <link rel = "stylesheet" href="styles.css"/>
-  <link rel = "stylesheet" href="styles_chome.css"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<html lang="en">
 
-<nav class="navbar navbar-defailt navbar-fixed-top">
-<div class="container">
+  <head>
 
-  <ul class="nav navbar-nav">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-<!-- Dropdown menue-->
+    <title>CarMart</title>
 
-<div class="navbar">
-  <a href="home.php">Home</a>
-  <a href="#news">News</a>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<div class="navbar">
-  <a href="#news">Buy Vehicle</a>
-    <a href="login.php">Sell Vehicle</a>
-    <a href="login.php">Contact us</a>
-  <a href="#news">About us</a>
-    <a href="logout.php">Log out</a>
-</div>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>Car<em>Mart</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.php">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
+                  <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="blog.html">Blog</a>
+                      <a class="dropdown-item" href="team.html">Team</a>
+                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                      <a class="dropdown-item" href="terms.html">Terms</a>
+                    </div>
+                </li>
 
 
 
-
-
-</div>
-</div>
-</center>
-
-<div class="phppot-container">
-  <div class="page-content">Welcome <?php echo $username;?></div>
-</div>
-
-<br>
-<br>
-
-
-
-
-
-<HTML>
-  <div class="chome">
-<HEAD>
-<TITLE>Welcome</TITLE>
-<link href="assets/css/phppot-style.css" type="text/css"
-	rel="stylesheet" />
-<link href="assets/css/user-registration.css" type="text/css"
-	rel="stylesheet" />
-<link rel = "stylesheet" href="styles_chome.css"/>
-</HEAD>
-<BODY>
-  <div class="cbody">
-
-
-
-    <div class="grid">
-      <div class="grid-item">
-        <div class="card">
-          <img class="card-img" src="./images/car1.jfif"  />
-          <div class="card-content">
-            <h1 class="card-header">Nissan</h1>
-            <p class="card-text">
-              XXXXXXXXXXXXXXXXXXXX<BR>
-                XXXXXXXXXXXXXXXXXXXX<BR>
-                  XXXXXXXXXXXXXXXXXXXX<BR>
-                    XXXXXXXXXXXXXXXXXXXX<BR>
-            </p>
-            <button class="card-btn">Visit <span>&rarr;</span></button>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="grid-item">
-        <div class="card">
-          <img class="card-img" src="images/car2.jpg"  />
-          <div class="card-content">
-            <h1 class="card-header">Ford</h1>
-            <p class="card-text">
-              XXXXXXXXXXXXXXXXXXXX<BR>
-                XXXXXXXXXXXXXXXXXXXX<BR>
-                  XXXXXXXXXXXXXXXXXXXX<BR>
-                    XXXXXXXXXXXXXXXXXXXX<BR>
-            </p>
-            <button class="card-btn">Visit <span>&rarr;</span></button>
+      </nav>
+    </header>
+
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Find your car today!</h4>
+            <h2>Lets make your journy comfortable</h2>
           </div>
         </div>
-      </div>
-      <div class="grid-item">
-        <div class="card">
-          <img class="card-img" src="./images/car3.jpg" alt="Maldives" />
-          <div class="card-content">
-            <h1 class="card-header">Toyota</h1>
-            <p class="card-text">
-              XXXXXXXXXXXXXXXXXXXX<BR>
-                XXXXXXXXXXXXXXXXXXXX<BR>
-                  XXXXXXXXXXXXXXXXXXXX<BR>
-                    XXXXXXXXXXXXXXXXXXXX<BR>
-            </p>
-            <button class="card-btn">Visit <span>&rarr;</span></button>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Fugiat Aspernatur</h4>
+            <h2>Laboriosam reprehenderit ducimus</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Saepe Omnis</h4>
+            <h2>Quaerat suscipit unde minus dicta</h2>
           </div>
         </div>
       </div>
     </div>
-</div>
+    <!-- Banner Ends Here -->
 
-<br>
-<br>
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>New arivals</h2>
+              <a href="cars.html">view more <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+              <a href="car-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
 
-<br>
-<br>
+                <h6><small><del> $11199.00</del></small> $11179.00</h6>
 
-</div>
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-<br>
-<br>
+                <small>
+                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+              </div>
+            </div>
+          </div>
 
-<br>
-<br>
+          <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+              <a href="car-details.html"><img src="assets/images/product-2-370x270.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
 
+                <h6><small><del> $11199.00</del></small> $11179.00</h6>
 
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
+                <small>
+                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+              <a href="car-details.html"><img src="assets/images/product-3-370x270.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
 
-<!-- Slide show code ===========================================================================-->
+                <h6><small><del> $11199.00</del></small> $11179.00</h6>
 
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-<div class="slideshow-container">
+                <small>
+                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+              </div>
+            </div>
+          </div>
 
-   <div class="mySlides fade">
-     <div class="numbertext">1 / 3</div>
-     <img src="images/slide1.png" style="width:100%">
+          <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+              <a href="car-details.html"><img src="assets/images/product-4-370x270.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
 
-   </div>
+                <h6><small><del> $11199.00</del></small> $11179.00</h6>
 
-   <div class="mySlides fade">
-     <div class="numbertext">2 / 3</div>
-     <img src="images/slide2.png" style="width:100%">
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-   </div>
+                <small>
+                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+              </div>
+            </div>
+          </div>
 
-   <div class="mySlides fade">
-     <div class="numbertext">3 / 3</div>
-     <img src="images/slide7.jpg" style="width:100%">
+          <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+              <a href="car-details.html"><img src="assets/images/product-5-370x270.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
 
-   </div>
+                <h6><small><del> $11199.00</del></small> $11179.00</h6>
 
-   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-   </div>
-   <br>
+                <small>
+                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+              </div>
+            </div>
+          </div>
 
-   <div style="text-align:center">
-     <span class="dot" onclick="currentSlide(1)"></span>
-     <span class="dot" onclick="currentSlide(2)"></span>
-     <span class="dot" onclick="currentSlide(3)"></span>
-   </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+              <a href="car-details.html"><img src="assets/images/product-6-370x270.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
 
-   <script>
-   var slideIndex = 1;
-   showSlides(slideIndex);
+                <h6><small><del> $11199.00</del></small> $11179.00</h6>
 
-   function plusSlides(n) {
-     showSlides(slideIndex += n);
-   }
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-   function currentSlide(n) {
-     showSlides(slideIndex = n);
-   }
+                <small>
+                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-   function showSlides(n) {
-     var i;
-     var slides = document.getElementsByClassName("mySlides");
-     var dots = document.getElementsByClassName("dot");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none";
-     }
-     for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");
-     }
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";
-   }
-
-</script>
-
-</BODY>
-
-
-<!-- Footer html code-->
-
-
-		<footer class="footer-distributed">
-
-		<div class="footer-left">
-
-		<h3>Car<span>Mart</span></h3>
-
-		<p class="footer-links">
-		<a href="#">Home</a>
-	·
-		<a href="#">About</a>
-	·
-		<a href="#">Contact</a>
-		</p>
-
-
-		</div>
-
-		<div class="footer-center">
-
-		<div>
-		<i class="fa fa-map-marker"></i>
-		<p><span>no 3 st Annes road Jaela</span> Gampaha, Srilanka</p>
-		</div>
-
-		<div>
-		<i class="fa fa-phone"></i>
-		<p>+011 2236439</p>
-		</div>
-
-		<div>
-		<i class="fa fa-envelope"></i>
-		<p><a href="mailto:support@company.com">lookgood@gmail.com</a></p>
-		</div>
-
-		</div>
-
-		<div class="footer-right">
-
-		<p class="footer-company-about">
-		<span>About the company</span>
-    CarMart is an online store where you can buy or sell any type of vehicle.
-		</p>
-
-		<div class="footer-icons">
-
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-linkedin"></i></a>
-		<a href="#"><i class="fa fa-github"></i></a>
-
-		</div>
-
-		</div>
-
-		</footer>
-</div>
-
-</HTML>
+    <div class="best-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>About Us</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Explicabo, esse consequatur alias repellat in excepturi inventore ad <a href="#">asperiores</a> tempora ipsa. Accusantium tenetur voluptate labore aperiam molestiae rerum excepturi minus in pariatur praesentium, corporis, aliquid dicta.</p>
+              <ul class="featured-list">
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Consectetur an adipisicing elit</a></li>
+                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
+                <li><a href="#">Corporis, omnis doloremque</a></li>
+              </ul>
+              <a href="about-us.html" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="assets/images/about-1-570x350.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

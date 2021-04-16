@@ -1,42 +1,3 @@
-<?php
-
-//include ('image_class.php');
-
-//$obj_image=new Image();
-/*
-if(@$_POST['Submit'])
-{
-
-  $obj_image->name=str_replace("'","''", $_POST['txt_image_name']);
-  $obj_image->description=str_replace("'","''", $_POST['txt_image_description']);
-  $obj_image->price=str_replace("'","''", $_POST['txt_image_price']);
-  $obj_image->image=str_replace("'","''", $_FILES['txt_image']);
-
-
-
-
-
-  $obj_image->insert_into_image();
-}*/
-
-session_start();
-if (isset($_SESSION["username"])) {
-    $username = $_SESSION["username"];
-    session_write_close();
-} else {
-
-    session_unset();
-    session_write_close();
-    $url = "./index.php";
-    header("Location: $url");
-}
-
-
-
-
-
-?>
-
 <html>
 <head>
 
@@ -56,10 +17,11 @@ if (isset($_SESSION["username"])) {
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets\css\adminportal_styles.css">
 
 </head>
 
-<body>
+
 
 
 
@@ -74,12 +36,12 @@ if (isset($_SESSION["username"])) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="adminhome.php">Home
+                  <a class="nav-link" href="index.php">Home
                     <span class="sr-only">(current)</span>
                   </a>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="admin_add_suv.php">Add vehicle</a></li>
+              <li class="nav-item"><a class="nav-link" href="addvehicle.php">Add vehicle</a></li>
                 <li class="nav-item"><a class="nav-link" href="addvehicle.php">View vehicle</a></li>
 
 
@@ -98,12 +60,10 @@ if (isset($_SESSION["username"])) {
 <br>
 <br>
 
+<?php
+  include ('display_data.php');
+  $obj_image = new suv();
+  $obj_image->get_from_suv();
 
 
-	<div class="phppot-container">
-
-	<center>	<div class="page-content">Welcome <?php echo $username;?></div></center>
-	</div>
-
-
-</HTML>
+?>
