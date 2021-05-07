@@ -21,9 +21,27 @@ $obj_image->condition=$_POST['txt_image_condition'];
 $obj_image->milage=$_POST['txt_image_milage'];
 $obj_image->ecapacity=$_POST['txt_image_ecapacity'];
 $obj_image->manual=$_POST['txt_image_manual'];
+$obj_image->sname=$_POST['txt_image_sname'];
+$obj_image->semail=$_POST['txt_image_semail'];
+$obj_image->stel=$_POST['txt_image_stel'];
+$obj_image->sinfo=$_POST['txt_image_sinfo'];
+$obj_image->status=$_POST['txt_image_status'];
+
+
 
 $image = $_FILES['txt_image']['tmp_name'];
 $obj_image->image = addslashes(file_get_contents($image));
+
+$image2 = $_FILES['txt_image2']['tmp_name'];
+$obj_image->image2 = addslashes(file_get_contents($image2));
+
+$image3 = $_FILES['txt_image3']['tmp_name'];
+$obj_image->image3 = addslashes(file_get_contents($image3));
+
+$image4 = $_FILES['txt_image4']['tmp_name'];
+$obj_image->image4 = addslashes(file_get_contents($image4));
+
+
 
 //echo 'aaa', $_POST['txt_image_name'], 'xxxx', $obj_image->name, 'zzz', $obj_image->des;
 
@@ -91,6 +109,7 @@ $obj_image->insert_into_image();
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="blog.html">Blog</a>
                     <a class="dropdown-item" href="team.html">Team</a>
+
                     <a class="dropdown-item" href="testimonials.html">Testimonials</a>
                     <a class="dropdown-item" href="terms.html">Terms</a>
                   </div>
@@ -116,19 +135,31 @@ $obj_image->insert_into_image();
 
 
 
-      <br>
-      <br>
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+            <CENTER>  <h2>ADD NEW VEHICLE ADVERT</h2></CENTER>
+
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
 
     <center>
           <form method="post" enctype="multipart/form-data">
-            <table border="1" width="80%">
+            <table border="0" width="40%">
               <tr>
-                <th width="50%">Image name</th>
+
+                <th width="50%">Vehecle name</th>
                 <td width="50%"><input type="text" name="txt_image_name"></td>
+
               </tr>
 
               <tr>
-                <th width="50%">Image description</th>
+                <th width="50%">Vehecle description</th>
                 <td width="50%"><input type="text" name="txt_image_description"></td>
               </tr>
 
@@ -138,25 +169,9 @@ $obj_image->insert_into_image();
               </tr>
 
 
-
-              <tr>
-                <th width="50%">Upload image</th>
-                <td width="50%"><input type="file" name="txt_image"></td>
-              </tr>
-
-              <tr>
-                <th width="50%">Vehicle type</th>
-                <td width="50%"><input type="text" name="txt_image_type"></td>
-              </tr>
-
               <tr>
                 <th width="50%">Horse power</th>
                 <td width="50%"><input type="text" name="txt_image_hp"></td>
-              </tr>
-
-              <tr>
-                <th width="50%">Petrol/Diesel</th>
-                <td width="50%"><input type="text" name="txt_image_pet"></td>
               </tr>
 
               <tr>
@@ -165,32 +180,165 @@ $obj_image->insert_into_image();
               </tr>
 
               <tr>
-                <th width="50%">Used/Brand new</th>
-                <td width="50%"><input type="text" name="txt_image_condition"></td>
-              </tr>
-
-              <tr>
                 <th width="50%">Milage</th>
                 <td width="50%"><input type="text" name="txt_image_milage"></td>
               </tr>
 
               <tr>
-                <th width="50%">Engine capacity/th>
+                <th width="50%">Engine capacity</th>
                 <td width="50%"><input type="text" name="txt_image_ecapacity"></td>
               </tr>
 
+
+
+
+
+              <tr>
+                <th width="50%">Vehicle type</th>
+                <td width="50%">
+                  <select name="txt_image_type" id="cars">
+                     <option value="suv">suv</option>
+                     <option value="van">van</option>
+                     <option value="hybrid">hybrid</option>
+                     <option value="truck">truck</option>
+                      <option value="sadan">sadan</option>
+                        <option value="crossover">Crossover</option>
+                </select>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th width="50%">Petrol/Diesel</th>
+                <td width="50%">
+                  <select name="txt_image_pet" id="cars">
+                     <option value="Petrol">Petrol</option>
+                     <option value="Diesel">Diesel</option>
+                </select>
+                </td>
+              </tr>
+
+
+
+
+
+              <tr>
+                <th width="50%">Used/Brand new</th>
+                <td width="50%">
+                  <select name="txt_image_condition" id="cars">
+                     <option value="Used">Used</option>
+                     <option value="Brandnew">Brand new</option>
+                </select>
+
+                </td>
+              </tr>
+
+
+
+
+
               <tr>
                 <th width="50%">Manual/Auto</th>
-                <td width="50%"><input type="text" name="txt_image_manual"></td>
+                <td width="50%">
+                  <select name="txt_image_manual" id="cars">
+                     <option value="Manual">Manual</option>
+                     <option value="Auto">Auto</option>
+                </select>
+
+                </td>
               </tr>
 
               <tr>
-                <td></td>
-                <td>
-                  <input type="submit" name="Save" value="Save1">
-                </td>
+                <th width="50%">Upload image 1</th>
+                <td width="50%"><input type="file" name="txt_image"></td>
               </tr>
+
+              <tr>
+                <th width="50%">Upload image 2</th>
+                <td width="50%"><input type="file" name="txt_image2"></td>
+              </tr>
+
+              <tr>
+                <th width="50%">Upload image 3</th>
+                <td width="50%"><input type="file" name="txt_image3"></td>
+              </tr>
+
+              <tr>
+                <th width="50%">Upload image 4</th>
+                <td width="50%"><input type="file" name="txt_image4"></td>
+              </tr>
+
+              <tr>
+                <th width="50%">Advert Status</th>
+                <td width="50%"><input value="notaproved" name="txt_image_status"></td>
+              </tr>
+
+
+
+
+
+
+
             </table>
+
+
+            <div class="latest-products">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-heading">
+                    <CENTER>  <h2>ADD SELLER CONTACT DETAILS</h2></CENTER>
+
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+                <center>
+                      <form method="post" enctype="multipart/form-data">
+                        <table border="0" width="40%">
+                          <tr>
+
+                            <th width="50%">Seller name</th>
+                            <td width="50%"><input type="text" name="txt_image_sname"></td>
+
+                          </tr>
+
+                          <tr>
+                            <th width="50%">Email address</th>
+                            <td width="50%"><input type="text" name="txt_image_semail"></td>
+                          </tr>
+
+                          <tr>
+                            <th width="50%">Contact number</th>
+                            <td width="50%"><input type="text" name="txt_image_stel"></td>
+                          </tr>
+
+
+                          <tr>
+                            <th width="50%">Other information</th>
+                            <td width="50%"><input type="text" name="txt_image_sinfo"></td>
+                          </tr>
+
+
+                          <tr>
+                            <td></td>
+                            <td>
+                              <br><br>
+                              <input type="submit" name="Save" value="Publish advertistment">
+                                <br><br>
+                            </td>
+                          </tr>
+
+                        </table>
+
+
+
+
+
+
+
           </form>
         </center>
 

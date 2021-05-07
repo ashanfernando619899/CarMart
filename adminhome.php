@@ -98,12 +98,43 @@ if (isset($_SESSION["username"])) {
 <br>
 <br>
 
+<div class="col-md-12">
+  <div class="section-heading">
+    <h2>Hot deals</h2>
+    <a href="cars.html">view more <i class="fa fa-angle-right"></i></a>
+  </div>
+</div>
+
 
 
 	<div class="phppot-container">
 
 	<center>	<div class="page-content">Welcome <?php echo $username;?></div></center>
 	</div>
+
+
+  <div class="latest-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+          <CENTER>  <h2>New vehicle adverts</h2></CENTER>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+<?php
+  include ('display_data.php');
+  $obj_image = new admin();
+  $obj_image->get_from_admin();
+
+
+?>
+
 
 
 </HTML>

@@ -58,28 +58,20 @@ if (isset($_SESSION["username"])) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="home.php">Home
+                  <a class="nav-link" href="adminhome.php">Home
                     <span class="sr-only">(current)</span>
                   </a>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
-                <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
-
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="blog.html">Blog</a>
-                    <a class="dropdown-item" href="team.html">Team</a>
-                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                    <a class="dropdown-item" href="terms.html">Terms</a>
-                  </div>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="admin_add_suv.php">Add vehicle</a></li>
+                <li class="nav-item"><a class="nav-link" href="addvehicle.php">View vehicle</a></li>
 
 
 
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="adminregistration.php">Add new admin</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
+
               <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
           </ul>
         </div>
@@ -117,9 +109,9 @@ if (isset($_SESSION["username"])) {
 
       <div class="col-lg-4 col-md-6">
         <div class="product-item">
-          <a href="display_van.php"><img src="assets/images/van.jpg" alt=""></a>
+          <a href="car-details.html"><img src="assets/images/van.jpg" alt=""></a>
           <div class="down-content">
-            <a href="display_van.php"><h4>Vans</h4></a>
+            <a href="car-details.html"><h4>Vans</h4></a>
           </div>
         </div>
       </div>
@@ -127,20 +119,9 @@ if (isset($_SESSION["username"])) {
 
       <div class="col-lg-4 col-md-6">
         <div class="product-item">
-          <a href="display_hybrid.php"><img src="assets/images/product-3-370x270.jpg" alt=""></a>
+          <a href="car-details.html"><img src="assets/images/product-3-370x270.jpg" alt=""></a>
           <div class="down-content">
-            <a href="display_hybrid.php"><h4>Hybrids</h4></a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-lg-4 col-md-6">
-        <div class="product-item">
-          <a href="display_trucks.php"><img src="assets/images/Truck.jpg" alt=""></a>
-          <div class="down-content">
-            <a href="display_trucks.php"><h4>Trucks</h4></a>
+            <a href="car-details.html"><h4>Hybrids</h4></a>
           </div>
         </div>
       </div>
@@ -149,9 +130,20 @@ if (isset($_SESSION["username"])) {
 
       <div class="col-lg-4 col-md-6">
         <div class="product-item">
-          <a href="display_sadan.php"><img src="assets/images/sedan.jpg" alt=""></a>
+          <a href="car-details.html"><img src="assets/images/Truck.jpg" alt=""></a>
           <div class="down-content">
-            <a href="display_sadan.php"><h4>Sedans</h4></a>
+            <a href="car-details.html"><h4>Trucks</h4></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-4 col-md-6">
+        <div class="product-item">
+          <a href="car-details.html"><img src="assets/images/sedan.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="car-details.html"><h4>Sedans</h4></a>
 
           </div>
         </div>
@@ -161,9 +153,9 @@ if (isset($_SESSION["username"])) {
 
       <div class="col-lg-4 col-md-6">
         <div class="product-item">
-          <a href="display_crossover.php"><img src="assets/images/product-6-370x270.jpg" alt=""></a>
+          <a href="car-details.html"><img src="assets/images/product-6-370x270.jpg" alt=""></a>
           <div class="down-content">
-            <a href="display_crossover.php"><h4>Crossovers</h4></a>
+            <a href="car-details.html"><h4>Crossovers</h4></a>
           </div>
         </div>
       </div>

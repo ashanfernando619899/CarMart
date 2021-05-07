@@ -63,26 +63,29 @@ if (isset($_SESSION["username"])) {
                 <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
                   <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
 
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="blog.html">Blog</a>
-                      <a class="dropdown-item" href="team.html">Team</a>
-                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                      <a class="dropdown-item" href="terms.html">Terms</a>
-                    </div>
-                </li>
 
 
 
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+
+
+                <li>
+
+                  <form action="users.php" method="GET">
+                   <input id="search" name="search" type="text" placeholder="Type here">
+                      <input id="submit" type="submit" value="Search">
+                     </form>
+                     
+                </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+
 
 
     <!-- Page Content -->
@@ -116,7 +119,7 @@ if (isset($_SESSION["username"])) {
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>New arivals</h2>
+              <h2>New Araivals</h2>
               <a href="cars.html">view more <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
@@ -124,9 +127,9 @@ if (isset($_SESSION["username"])) {
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>KIA Sportage 6000</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> </del></small> LKR 2,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -143,9 +146,9 @@ if (isset($_SESSION["username"])) {
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-2-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>BMW M1</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del></del></small> LKR 5,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -162,9 +165,9 @@ if (isset($_SESSION["username"])) {
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-3-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>Mercedes-Benz GLS</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> </del></small> LKR 8,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -181,9 +184,9 @@ if (isset($_SESSION["username"])) {
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-4-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>Mercedes-Benz E-class</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> </del></small> LKR 12,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -200,9 +203,9 @@ if (isset($_SESSION["username"])) {
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-5-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>BMW 5 Series</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> </del></small> LKR 15,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -219,9 +222,9 @@ if (isset($_SESSION["username"])) {
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-6-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>Ford figo</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> </del></small> LKR 8,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -247,12 +250,12 @@ if (isset($_SESSION["username"])) {
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Explicabo, esse consequatur alias repellat in excepturi inventore ad <a href="#">asperiores</a> tempora ipsa. Accusantium tenetur voluptate labore aperiam molestiae rerum excepturi minus in pariatur praesentium, corporis, aliquid dicta.</p>
+              <p>At CarMart, our commitment to innovation and iconic customer experiences have made us the nation’s largest retailer of used cars. As the original disruptor of the automotive industry, our “no-haggle” prices transformed car buying and selling from a stressful, dreaded event into the honest, straightforward experience all people deserve. We’ve been raising the bar on customer  experiences ever since.</p>
               <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Complaints and inqiries</a></li>
+
               </ul>
               <a href="about-us.html" class="filled-button">Read More</a>
             </div>

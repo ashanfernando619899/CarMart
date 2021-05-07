@@ -112,7 +112,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>New arivals</h2>
+              <h2>Hot deals</h2>
               <a href="cars.html">view more <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
@@ -120,9 +120,9 @@
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>KIA Sportage 6000</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> LKR 2,258,772</del></small> LKR 2,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -139,9 +139,9 @@
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-2-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>BMW M1</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> LKR 5,258,772</del></small> LKR 5,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -158,9 +158,9 @@
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-3-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>Mercedes-Benz GLS</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> LKR 8,258,772</del></small> LKR 8,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -177,9 +177,9 @@
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-4-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>Mercedes-Benz E-class</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> LKR 12,358,772</del></small> LKR 12,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -196,9 +196,9 @@
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-5-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>BMW 5 Series</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> LKR 15,258,772</del></small> LKR 15,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -215,9 +215,9 @@
             <div class="product-item">
               <a href="car-details.html"><img src="assets/images/product-6-370x270.jpg" alt=""></a>
               <div class="down-content">
-                <a href="car-details.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
+                <a href="car-details.html"><h4>Ford figo</h4></a>
 
-                <h6><small><del> $11199.00</del></small> $11179.00</h6>
+                <h6><small><del> LKR 8,258,772</del></small> LKR 8,158,772</h6>
 
                 <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
@@ -243,12 +243,12 @@
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Explicabo, esse consequatur alias repellat in excepturi inventore ad <a href="#">asperiores</a> tempora ipsa. Accusantium tenetur voluptate labore aperiam molestiae rerum excepturi minus in pariatur praesentium, corporis, aliquid dicta.</p>
+              <p>At CarMart, our commitment to innovation and iconic customer experiences have made us the nation’s largest retailer of used cars. As the original disruptor of the automotive industry, our “no-haggle” prices transformed car buying and selling from a stressful, dreaded event into the honest, straightforward experience all people deserve. We’ve been raising the bar on customer  experiences ever since.</p>
               <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Complaints and inqiries</a></li>
+
               </ul>
               <a href="about-us.html" class="filled-button">Read More</a>
             </div>
@@ -267,7 +267,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Latest blog posts</h2>
+              <h2>Latest Customer Rewievs</h2>
 
               <a href="blog.html">read more <i class="fa fa-angle-right"></i></a>
             </div>
@@ -278,7 +278,7 @@
               <a href="#" class="services-item-image"><img src="assets/images/blog-1-370x270.jpg" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</a></h4>
+                <h4><a href="#">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></h4>
 
                 <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
@@ -289,7 +289,7 @@
               <a href="#" class="services-item-image"><img src="assets/images/blog-2-370x270.jpg" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h4>
+                <h4><a href="#">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></h4>
 
                 <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
@@ -300,7 +300,7 @@
               <a href="#" class="services-item-image"><img src="assets/images/blog-3-370x270.jpg" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">Aperiam modi voluptatum fuga officiis cumque</a></h4>
+                <h4><a href="#">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></h4>
 
                 <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
@@ -310,82 +310,7 @@
       </div>
     </div>
 
-    <div class="happy-clients">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Happy Clients</h2>
 
-              <a href="testimonials.html">read more <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="owl-clients owl-carousel text-center">
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>John Doe</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Jane Smith</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Antony Davis</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>John Doe</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Jane Smith</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Antony Davis</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
     <div class="call-to-action">
@@ -395,8 +320,8 @@
             <div class="inner-content">
               <div class="row">
                 <div class="col-md-8">
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                  <h4>Find answers or connect with one of our team members</h4>
+                  <p>Find answers or connect with a human.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-right">
                   <a href="contact.html" class="filled-button">Contact Us</a>
