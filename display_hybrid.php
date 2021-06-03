@@ -29,28 +29,38 @@
   <header class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.php"><h2>Car<em>Mart</em></h2></a>
+        <a class="navbar-brand" href="index.html"><h2>Car<em>Mart</em></h2></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="home.php">Home
+                  <a class="nav-link" href="buyerhome.php">Home
                     <span class="sr-only">(current)</span>
                   </a>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicles</a></li>
-                <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
+              <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
 
 
 
 
-                <li class="nav-item"><a class="nav-link" href="adminregistration.php">more</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
 
+
+              <li class="nav-item"><a class="nav-link" href="contactusbuyer.php">Contact Us</a></li>
               <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+
+
+              <li>
+
+                 <form method="post" enctype="multipart/form-data">
+                 <input  name="search" type="text" placeholder="Type here">
+                    <input  type="submit" name="Search">
+                  </form>
+
+
+              </li>
           </ul>
         </div>
       </div>

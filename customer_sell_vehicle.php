@@ -100,25 +100,18 @@ $obj_image->insert_into_image();
                   </a>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
+
                 <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
 
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="blog.html">Blog</a>
-                    <a class="dropdown-item" href="team.html">Team</a>
-
-                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                    <a class="dropdown-item" href="terms.html">Terms</a>
-                  </div>
-              </li>
 
 
 
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="contactus.php">Contact Us</a></li>
               <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+
+
+
           </ul>
         </div>
       </div>

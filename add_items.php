@@ -62,7 +62,9 @@ class suv
 
       if ($conn->query($sql) === TRUE)
       {
-        echo "New record created successfully";
+        echo '<script type="text/javascript">';
+        echo ' alert("Advert Added successfully")';  //not showing an alert box.
+        echo '</script>';
       }
 
       else
@@ -77,389 +79,121 @@ class suv
   }
 
 
-  class trousers
+  class contactus
   {
     public $name;
     public $des;
-    public $price;
-    public $image;
 
-    function insert_into_trousers()
+    public $hp;
+
+    public $myear;
+
+
+    function insert_into_image()
     {
+
       $servername = "127.0.0.1";
       $username = "root";
       $password = "";
-      $dbname = "lookgood1";
+      $dbname = "carmart";
 
       // Create connection
       $conn = new mysqli($servername, $username, $password, $dbname);
+
       // Check connection
-      if ($conn->connect_error) {
+      if ($conn->connect_error)
+      {
+
         die("Connection failed: " . $conn->connect_error);
+
       }
 
 
-        $sql="insert into men_trousers(name,description,price,image)
-                values('$this->name','$this->des','$this->price','$this->image')";
+      $sql="insert into enquiries
+      (name,email,subject,enquiry)
 
-        if ($conn->query($sql) === TRUE) {
-                echo "New product added";
-              } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-              }
+      values('$this->name','$this->des','$this->hp',
+             '$this->myear'
 
-              $conn->close();
 
-                  }
+             )";
 
+
+        if ($conn->query($sql) === TRUE)
+        {
+          echo '<script type="text/javascript">';
+          echo ' alert("Enquiry sent successfully")';  //not showing an alert box.
+          echo '</script>';
+        }
+
+        else
+        {
+           echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        $conn->close();
+
+        }
 
     }
 
-    class shoes
+    class contactusbuyer
     {
       public $name;
       public $des;
-      public $price;
-      public $image;
 
-      function insert_into_shoes()
+      public $hp;
+
+      public $myear;
+
+
+      function insert_into_image()
       {
+
         $servername = "127.0.0.1";
         $username = "root";
         $password = "";
-        $dbname = "lookgood1";
+        $dbname = "carmart";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
+
         // Check connection
-        if ($conn->connect_error) {
+        if ($conn->connect_error)
+        {
+
           die("Connection failed: " . $conn->connect_error);
+
         }
 
 
-          $sql="insert into men_shoes(name,description,price,image)
-                  values('$this->name','$this->des','$this->price','$this->image')";
+        $sql="insert into enquiriesbuyer
+        (name,email,subject,enquiry)
 
-          if ($conn->query($sql) === TRUE) {
-                  echo "New product added";
-                } else {
-                  echo "Error: " . $sql . "<br>" . $conn->error;
-                }
+        values('$this->name','$this->des','$this->hp',
+               '$this->myear'
 
-                $conn->close();
 
-                    }
+               )";
 
+
+          if ($conn->query($sql) === TRUE)
+          {
+            echo '<script type="text/javascript">';
+            echo ' alert("Enquiry sent successfully")';  //not showing an alert box.
+            echo '</script>';
+          }
+
+          else
+          {
+             echo "Error: " . $sql . "<br>" . $conn->error;
+          }
+
+          $conn->close();
+
+          }
 
       }
-
-      class accessories
-      {
-        public $name;
-        public $des;
-        public $price;
-        public $image;
-
-        function insert_into_accessories()
-        {
-          $servername = "127.0.0.1";
-          $username = "root";
-          $password = "";
-          $dbname = "lookgood1";
-
-          // Create connection
-          $conn = new mysqli($servername, $username, $password, $dbname);
-          // Check connection
-          if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-          }
-
-
-            $sql="insert into men_accessories(name,description,price,image)
-                    values('$this->name','$this->des','$this->price','$this->image')";
-
-            if ($conn->query($sql) === TRUE) {
-                    echo "New product added";
-                  } else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                  }
-
-                  $conn->close();
-
-                      }
-
-
-        }
-
-        class w_tshirt
-        {
-          public $name;
-          public $des;
-          public $price;
-          public $image;
-
-          function insert_into_w_tshirt()
-          {
-            $servername = "127.0.0.1";
-            $username = "root";
-            $password = "";
-            $dbname = "lookgood1";
-
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
-            }
-
-
-              $sql="insert into women_tshirt(name,description,price,image)
-                      values('$this->name','$this->des','$this->price','$this->image')";
-
-              if ($conn->query($sql) === TRUE) {
-                      echo "New product added";
-                    } else {
-                      echo "Error: " . $sql . "<br>" . $conn->error;
-                    }
-
-                    $conn->close();
-
-                        }
-
-
-          }
-
-
-          class w_trousers
-          {
-            public $name;
-            public $des;
-            public $price;
-            public $image;
-
-            function insert_into_w_trousers()
-            {
-              $servername = "127.0.0.1";
-              $username = "root";
-              $password = "";
-              $dbname = "lookgood1";
-
-              // Create connection
-              $conn = new mysqli($servername, $username, $password, $dbname);
-              // Check connection
-              if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-              }
-
-
-                $sql="insert into women_trousers(name,description,price,image)
-                        values('$this->name','$this->des','$this->price','$this->image')";
-
-                if ($conn->query($sql) === TRUE) {
-                        echo "New product added";
-                      } else {
-                        echo "Error: " . $sql . "<br>" . $conn->error;
-                      }
-
-                      $conn->close();
-
-                          }
-
-
-            }
-
-            class w_shoes
-            {
-              public $name;
-              public $des;
-              public $price;
-              public $image;
-
-              function insert_into_w_shoes()
-              {
-                $servername = "127.0.0.1";
-                $username = "root";
-                $password = "";
-                $dbname = "lookgood1";
-
-                // Create connection
-                $conn = new mysqli($servername, $username, $password, $dbname);
-                // Check connection
-                if ($conn->connect_error) {
-                  die("Connection failed: " . $conn->connect_error);
-                }
-
-
-                  $sql="insert into women_shoes(name,description,price,image)
-                          values('$this->name','$this->des','$this->price','$this->image')";
-
-                  if ($conn->query($sql) === TRUE) {
-                          echo "New product added";
-                        } else {
-                          echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
-
-                        $conn->close();
-
-                            }
-
-
-              }
-
-
-              class w_accessories
-              {
-                public $name;
-                public $des;
-                public $price;
-                public $image;
-
-                function insert_into_w_accessories()
-                {
-                  $servername = "127.0.0.1";
-                  $username = "root";
-                  $password = "";
-                  $dbname = "lookgood1";
-
-                  // Create connection
-                  $conn = new mysqli($servername, $username, $password, $dbname);
-                  // Check connection
-                  if ($conn->connect_error) {
-                    die("Connection failed: " . $conn->connect_error);
-                  }
-
-
-                    $sql="insert into women_accessories(name,description,price,image)
-                            values('$this->name','$this->des','$this->price','$this->image')";
-
-                    if ($conn->query($sql) === TRUE) {
-                            echo "New product added";
-                          } else {
-                            echo "Error: " . $sql . "<br>" . $conn->error;
-                          }
-
-                          $conn->close();
-
-                              }
-
-
-                }
-
-
-                class c_tshirt
-                {
-                  public $name;
-                  public $des;
-                  public $price;
-                  public $image;
-
-                  function insert_into_c_tshirt()
-                  {
-                    $servername = "127.0.0.1";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "lookgood1";
-
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    // Check connection
-                    if ($conn->connect_error) {
-                      die("Connection failed: " . $conn->connect_error);
-                    }
-
-
-                      $sql="insert into children_tshirt(name,description,price,image)
-                              values('$this->name','$this->des','$this->price','$this->image')";
-
-                      if ($conn->query($sql) === TRUE) {
-                              echo "New product added";
-                            } else {
-                              echo "Error: " . $sql . "<br>" . $conn->error;
-                            }
-
-                            $conn->close();
-
-                                }
-
-
-                  }
-
-
-                  class c_trousers
-                  {
-                    public $name;
-                    public $des;
-                    public $price;
-                    public $image;
-
-                    function insert_into_c_trousers()
-                    {
-                      $servername = "127.0.0.1";
-                      $username = "root";
-                      $password = "";
-                      $dbname = "lookgood1";
-
-                      // Create connection
-                      $conn = new mysqli($servername, $username, $password, $dbname);
-                      // Check connection
-                      if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                      }
-
-
-                        $sql="insert into children_trousers(name,description,price,image)
-                                values('$this->name','$this->des','$this->price','$this->image')";
-
-                        if ($conn->query($sql) === TRUE) {
-                                echo "New product added";
-                              } else {
-                                echo "Error: " . $sql . "<br>" . $conn->error;
-                              }
-
-                              $conn->close();
-
-                                  }
-
-
-                    }
-
-                    class c_shoes
-                    {
-                      public $name;
-                      public $des;
-                      public $price;
-                      public $image;
-
-                      function insert_into_c_shoes()
-                      {
-                        $servername = "127.0.0.1";
-                        $username = "root";
-                        $password = "";
-                        $dbname = "lookgood1";
-
-                        // Create connection
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-                        // Check connection
-                        if ($conn->connect_error) {
-                          die("Connection failed: " . $conn->connect_error);
-                        }
-
-
-                          $sql="insert into children_shoes(name,description,price,image)
-                                  values('$this->name','$this->des','$this->price','$this->image')";
-
-                          if ($conn->query($sql) === TRUE) {
-                                  echo "New product added";
-                                } else {
-                                  echo "Error: " . $sql . "<br>" . $conn->error;
-                                }
-
-                                $conn->close();
-
-                                    }
-
-
-                      }
 
 
 

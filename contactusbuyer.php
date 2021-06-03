@@ -1,3 +1,43 @@
+<?php
+
+include ('add_items.php');
+
+$obj_image = new contactusbuyer();
+
+if(isset($_POST['Save']))
+{
+  /*$obj_image->name=str_replace("'","''", $_POST['txt_image_name']);
+  $obj_image->des=str_replace("'","''", $_POST['txt_image_description']);
+  $obj_image->price=str_replace("'","''", $_POST['txt_image_price']);*/
+
+$obj_image->name=$_POST['txt_image_name'];
+$obj_image->des=$_POST['txt_image_description'];
+
+$obj_image->hp=$_POST['txt_image_hp'];
+
+$obj_image->myear=$_POST['txt_image_myear'];
+
+
+
+
+
+
+
+
+//echo 'aaa', $_POST['txt_image_name'], 'xxxx', $obj_image->name, 'zzz', $obj_image->des;
+
+$obj_image->insert_into_image();
+
+
+}
+
+
+
+?>
+
+
+
+
 <html>
 <head>
 
@@ -70,10 +110,90 @@
 <br>
 <br>
 
-<?php
-  include ('display_data.php');
-  $obj_image = new suv();
-  $obj_image->get_from_suv();
+<body>
+
+	<div class="phppot-container">
 
 
-?>
+
+
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+            <CENTER>  <h2>Send us your Reviews</h2></CENTER>
+
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+
+    <center>
+          <form method="post" enctype="multipart/form-data">
+            <table border="0" width="40%">
+              <tr>
+
+                <th width="50%">Customer name</th>
+                <td width="50%"><input type="text" name="txt_image_name"></td>
+
+              </tr>
+
+              <tr>
+                <th width="50%">Email address</th>
+                <td width="50%"><input type="text" name="txt_image_description"></td>
+              </tr>
+
+
+
+
+              <tr>
+                <th width="50%">Enquiry subject</th>
+                <td width="50%"><input type="text" name="txt_image_hp"></td>
+              </tr>
+
+              <tr>
+                <th width="50%">Enquiry</th>
+                <td width="50%"><input type="text" name="txt_image_myear"></td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td>
+                  <br><br>
+                  <input type="submit" name="Save" value="Send message">
+                    <br><br>
+                </td>
+              </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </form>
+        </center>
+
+    </html>

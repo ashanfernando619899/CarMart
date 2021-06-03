@@ -77,21 +77,31 @@ $result = $conn->query($sql);
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="adminhome.php">Home
+                    <a class="nav-link" href="buyerhome.php">Home
                       <span class="sr-only">(current)</span>
                     </a>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="admin_add_suv.php">Add vehicle</a></li>
-                  <li class="nav-item"><a class="nav-link" href="addvehicle.php">View vehicle</a></li>
+                <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
 
 
 
 
-                  <li class="nav-item"><a class="nav-link" href="adminregistration.php">Add new admin</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
 
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+
+
+                <li>
+
+                   <form method="post" enctype="multipart/form-data">
+                   <input  name="search" type="text" placeholder="Type here">
+                      <input  type="submit" name="Search">
+                    </form>
+
+
+                </li>
             </ul>
           </div>
         </div>

@@ -11,10 +11,26 @@ if (isset($_SESSION["username"])) {
     session_write_close();
     $url = "./index.php";
     header("Location: $url");
+
+}
+
+include ('search.php');
+$obj_image = new search();
+
+
+
+if(isset($_POST['Search']))
+{
+
+$obj_image->search=$_POST['search'];
+$obj_image->insert_into_image();
+
+
+
+
 }
 
 ?>
-
 <html lang="en">
 
   <head>
@@ -60,25 +76,18 @@ if (isset($_SESSION["username"])) {
                     </a>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
+
                   <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
 
 
 
 
 
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.php">Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
 
 
-                <li>
 
-                  <form action="users.php" method="GET">
-                   <input id="search" name="search" type="text" placeholder="Type here">
-                      <input id="submit" type="submit" value="Search">
-                     </form>
-                     
-                </li>
             </ul>
           </div>
         </div>
@@ -118,67 +127,71 @@ if (isset($_SESSION["username"])) {
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+
             <div class="section-heading">
-              <h2>New Araivals</h2>
-              <a href="cars.html">view more <i class="fa fa-angle-right"></i></a>
+            <center>  <h2><div class="page-content">Welcome <?php echo $username;?></div></center></h2></center>
+
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="product-item">
-              <a href="car-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+
               <div class="down-content">
-                <a href="car-details.html"><h4>KIA Sportage 6000</h4></a>
+                <a href="myadvertpage.php"><h4>View posted Advertistments</h4></a>
 
-                <h6><small><del> </del></small> LKR 2,158,772</h6>
+                <h6><small><del> </del></small>aproved adverts</h6>
 
-                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-                <small>
-                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
-                </small>
+
+
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="product-item">
-              <a href="car-details.html"><img src="assets/images/product-2-370x270.jpg" alt=""></a>
+
               <div class="down-content">
-                <a href="car-details.html"><h4>BMW M1</h4></a>
+                <a href="pendingadvertpage.php"><h4>View pending Advertistments</h4></a>
 
-                <h6><small><del></del></small> LKR 5,158,772</h6>
+                <h6><small><del></del></small>Adverts not aproved</h6>
 
-                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-                <small>
-                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
-                </small>
+
+
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="product-item">
-              <a href="car-details.html"><img src="assets/images/product-3-370x270.jpg" alt=""></a>
+
               <div class="down-content">
-                <a href="car-details.html"><h4>Mercedes-Benz GLS</h4></a>
+                <a href="car-details.html"><h4>Contact us</h4></a>
 
-                <h6><small><del> </del></small> LKR 8,158,772</h6>
+                <h6><small><del> </del></small> Submit your Complaints</h6>
 
-                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
 
-                <small>
-                  <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
-                </small>
+
+
               </div>
             </div>
           </div>
+
+
+
+
+
+
+          <br>
+          <br>
+
+<div class="col-md-12">
+          <div class="section-heading">
+            <h2>New Araivals</h2>
+            <a href="cars.html">view more <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="product-item">

@@ -2,7 +2,7 @@
 use Phppot\Member;
 
 if (! empty($_POST["login-btn"])) {
-    require_once __DIR__ . '/Model/Member.php';
+    require_once __DIR__ . '/Model/buyer.php';
     $member = new Member();
     $loginResult = $member->loginMember();
 }
@@ -101,7 +101,7 @@ if (! empty($_POST["login-btn"])) {
 
 <HTML>
 <HEAD>
-<TITLE>Seller Login</TITLE>
+<TITLE>Buyer Login</TITLE>
 <link href="assets/css/phppot-style.css" type="text/css"
 	rel="stylesheet" />
 <link href="assets/css/user-registration.css" type="text/css"
@@ -112,12 +112,12 @@ if (! empty($_POST["login-btn"])) {
 	<div class="phppot-container">
 		<div class="sign-up-container">
 			<div class="login-signup">
-				<a href="registration.php">Sign up</a>
+				<a href="buyerregister.php">Sign up</a>
 			</div>
 			<div class="signup-align">
 				<form name="login" action="" method="post"
 					onsubmit="return loginValidation()">
-					<div class="signup-heading">Seller Login</div>
+					<div class="signup-heading">Buyer Login</div>
 				<?php if(!empty($loginResult)){?>
 				<div class="error-msg"><?php echo $loginResult;?></div>
 				<?php }?>

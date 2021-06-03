@@ -2,7 +2,7 @@
 
 
 
-session_start();
+/*session_start();
 if (isset($_SESSION["username"])) {
     $username = $_SESSION["username"];
     session_write_close();
@@ -12,7 +12,7 @@ if (isset($_SESSION["username"])) {
     session_write_close();
     $url = "./index.php";
     header("Location: $url");
-}
+}*/
 
 
 
@@ -58,29 +58,31 @@ if (isset($_SESSION["username"])) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="home.php">Home
+                  <a class="nav-link" href="buyerhome.php">Home
                     <span class="sr-only">(current)</span>
                   </a>
               </li>
 
               <li class="nav-item"><a class="nav-link" href="customer_buy_vehicle.php">Buy vehicle</a></li>
-                <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
-
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="blog.html">Blog</a>
-                    <a class="dropdown-item" href="team.html">Team</a>
-                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                    <a class="dropdown-item" href="terms.html">Terms</a>
-                  </div>
-              </li>
 
 
 
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+
+
+              <li class="nav-item"><a class="nav-link" href="contactusbuyer.php">Contact Us</a></li>
               <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+
+
+              <li>
+
+                 <form method="post" enctype="multipart/form-data">
+                 <input  name="search" type="text" placeholder="Type here">
+                    <input  type="submit" name="Search">
+                  </form>
+
+
+              </li>
           </ul>
         </div>
       </div>
@@ -178,4 +180,4 @@ if (isset($_SESSION["username"])) {
 
 </body>
 
-</HTML>
+</html>

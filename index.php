@@ -56,8 +56,8 @@
                     </a>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="cars.html">Buy vehicle</a></li>
-                <li class="nav-item"><a class="nav-link" href="cars.html">Sell vehicle</a></li>
+                <li class="nav-item"><a class="nav-link" href="buyerlogin.php">Login as Buyer</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Login as Seller</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
@@ -73,7 +73,7 @@
 
 
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php">log in</a></li>
+
             </ul>
 
           </div>
@@ -118,7 +118,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="product-item">
-              <a href="car-details.html"><img src="assets/images/product-1-370x270.jpg" alt=""></a>
+              <a href="car-details.html"><img src="assets/images/suv.jpg" alt=""></a>
               <div class="down-content">
                 <a href="car-details.html"><h4>KIA Sportage 6000</h4></a>
 
@@ -278,7 +278,7 @@
               <a href="#" class="services-item-image"><img src="assets/images/blog-1-370x270.jpg" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></h4>
+                <h4><a href="#">Good customer service</a></h4>
 
                 <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
@@ -289,7 +289,7 @@
               <a href="#" class="services-item-image"><img src="assets/images/blog-2-370x270.jpg" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></h4>
+                <h4><a href="#">100% quality products</a></h4>
 
                 <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>
@@ -300,7 +300,7 @@
               <a href="#" class="services-item-image"><img src="assets/images/blog-3-370x270.jpg" class="img-fluid" alt=""></a>
 
               <div class="down-content">
-                <h4><a href="#">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></h4>
+                <h4><a href="#">many categories to choose</a></h4>
 
                 <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
               </div>

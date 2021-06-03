@@ -63,14 +63,14 @@ if (isset($_SESSION["username"])) {
                   </a>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="admin_add_suv.php">Add vehicle</a></li>
+
                 <li class="nav-item"><a class="nav-link" href="addvehicle.php">View vehicle</a></li>
 
 
 
 
                 <li class="nav-item"><a class="nav-link" href="adminregistration.php">Add new admin</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
+              <li class="nav-item"><a class="nav-link" href="reports.php">View Reports</a></li>
 
               <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
           </ul>

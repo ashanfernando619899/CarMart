@@ -4,8 +4,8 @@
 
 class aproved{
 
-
 public $id;
+
 
 function insert_into_aprove()
 {
@@ -26,12 +26,12 @@ if ($conn->connect_error)
 
 }
 
-
-$sql="Update vehicles SET status = 'aproved' WHERE id = $id  ";
+echo $id;
+$sql="UPDATE vehicles SET status = 'aproved' WHERE id = $id  ";
 
   if ($conn->query($sql) === TRUE)
   {
-    echo "New record created successfully";
+    echo "New record updated successfully";
   }
 
   else
@@ -42,10 +42,10 @@ $sql="Update vehicles SET status = 'aproved' WHERE id = $id  ";
   $conn->close();
 
   }
-  
+
 
 }
-}
+
 
 
 

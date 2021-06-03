@@ -1,7 +1,7 @@
 <?php
 use Phppot\Member;
 if (! empty($_POST["signup-btn"])) {
-    require_once './Model/Member.php';
+    require_once './Model/buyer.php';
     $member = new Member();
     $registrationResponse = $member->registerMember();
 }
@@ -110,7 +110,7 @@ if (! empty($_POST["signup-btn"])) {
 	<div class="phppot-container">
 		<div class="sign-up-container">
 			<div class="login-signup">
-				<a href="login.php">Login</a>
+				<a href="buyerlogin.php">Login</a>
 			</div>
 			<div class="">
 				<form name="sign-up" action="" method="post"

@@ -45,19 +45,19 @@ if (! empty($_POST["signup-btn"])) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Home
+                  <a class="nav-link" href="adminhome.php">Home
                     <span class="sr-only">(current)</span>
                   </a>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="cars.html">Add vehicle</a></li>
-                <li class="nav-item"><a class="nav-link" href="cars.html">View vehicle</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="addvehicle.php">View vehicle</a></li>
 
 
 
 
                 <li class="nav-item"><a class="nav-link" href="adminregistration.php">Add new admin</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
+              <li class="nav-item"><a class="nav-link" href="reports.php">View Reports</a></li>
 
               <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
           </ul>

@@ -132,27 +132,28 @@ else if (isset($_POST['decline']))
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="adminhome.php">Home
+                    <a class="nav-link" href="home.php">Home
                       <span class="sr-only">(current)</span>
                     </a>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="admin_add_suv.php">Add vehicle</a></li>
-                  <li class="nav-item"><a class="nav-link" href="addvehicle.php">View vehicle</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="customer_sell_vehicle.php">Sell vehicle</a></li>
 
 
 
 
-                  <li class="nav-item"><a class="nav-link" href="adminregistration.php">Add new admin</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact user</a></li>
 
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="logout.php">log out</a></li>
+
+
+
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
   <br>
   <br>
 
@@ -365,10 +366,10 @@ else if (isset($_POST['decline']))
                   <strong><?php echo $extra_info; ?></strong>
                 </p>
 
-                <input type="submit" name="Save" value="Aprove Advert">
+                <input type="submit" name="Save" value="Update Advert">
                 <br>
                 <br>
-                  <input type="submit" name="decline" value="Decline Advert">
+                  <input type="submit" name="decline" value="Delete Advert">
 
               </div>
 
