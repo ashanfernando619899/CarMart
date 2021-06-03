@@ -70,22 +70,28 @@ class Member
     {
         $isUsernameExists = $this->isUsernameExists($_POST["username"]);
         $isEmailExists = $this->isEmailExists($_POST["email"]);
-        if ($isUsernameExists) {
-            $response = array(
-                "status" => "error",
-                "message" => "Username already exists."
-            );
-        } else if ($isEmailExists) {
-            $response = array(
-                "status" => "error",
-                "message" => "Email already exists."
-            );
-        } else {
-            if (! empty($_POST["signup-password"])) {
 
+        if ($isUsernameExists)
+        {
+          $response = array(
+          "status" => "error",
+          "message" => "Username already exists.");
+        }
 
+        else if ($isEmailExists)
+        {
+            $response = array(
+            "status" => "error",
+            "message" => "Email already exists.");
+        }
+
+        else
+        {
+            if (! empty($_POST["signup-password"]))
+            {
                 $hashedPassword = password_hash($_POST["signup-password"], PASSWORD_DEFAULT);
             }
+
             $query = 'INSERT INTO tbl_member1 (username, password, email) VALUES (?, ?, ?)';
             $paramType = 'sss';
             $paramValue = array(
@@ -93,12 +99,15 @@ class Member
                 $hashedPassword,
                 $_POST["email"]
             );
+
+
             $memberId = $this->ds->insert($query, $paramType, $paramValue);
-            if (! empty($memberId)) {
+
+            if (! empty($memberId))
+            {
                 $response = array(
-                    "status" => "success",
-                    "message" => "You have registered successfully."
-                );
+                "status" => "success",
+                "message" => "You have registered successfully.");
             }
         }
         return $response;
@@ -118,25 +127,36 @@ class Member
     /**
      * to login a user
      *
-     
      */
     public function loginMember()
     {
         $memberRecord = $this->getMember($_POST["username"]);
         $loginPassword = 0;
-        if (! empty($memberRecord)) {
-            if (! empty($_POST["login-password"])) {
+
+        if (! empty($memberRecord))
+        {
+
+           if (! empty($_POST["login-password"]))
+             {
                 $password = $_POST["login-password"];
-            }
+             }
+
             $hashedPassword = $memberRecord[0]["password"];
             $loginPassword = 0;
-            if (password_verify($password, $hashedPassword)) {
+
+            if (password_verify($password, $hashedPassword))
+             {
                 $loginPassword = 1;
             }
-        } else {
-            $loginPassword = 0;
         }
-        if ($loginPassword == 1) {
+
+         else
+         {
+            $loginPassword = 0;
+         }
+
+        if ($loginPassword == 1)
+        {
             // login sucess so store the member's username in
             // the session
             session_start();
@@ -144,10 +164,13 @@ class Member
             session_write_close();
             $url = "./home.php";
             header("Location: $url");
-        } else if ($loginPassword == 0) {
+         }
+
+        else if ($loginPassword == 0)
+        {
             $loginStatus = "Invalid username or password.";
             return $loginStatus;
-        }
+      }
     }
 
 }
